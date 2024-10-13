@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do U Love Me?</title>
+ <style>
+    body {
+        font-family: 'Comic Sans MS', sans-serif;
+        text-align: center;
+        margin-top: 100px;
+        background-color: #f7d6e0;
+    }
+    h1 {
+        color: #ff69b4;
+    }
+    .buttton {
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 18px;
+        background-color: #ffb6c1;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .button:hover {
+        background-color: #ff69b4;
+    }
+    .message {
+        font-size: 24px;
+        color: #ff69b4;
+        margin-top: 30px;
+        display: none;
+    }
+ </style>
+ </head>
+ <body>
+    <h1>Do U Love Me?</h1>
+    <button class="button" onclick="showMessage('Yes, I Love U So Much!')">Yes</button>
+    <button class="button" onclick="showMessage('Nahh, I Love U Anyway!')">No</button>
+
+    <div class="message" id="message"></div>
+    <script>
+        function
+        showMessage(text) {
+            const messageDiv = document.getElementById('message');
+
+            messageDiv.textContent = text;
+
+            messageDiv.style.display = 'block';
+        }
+    </script>
+ </body>
+</html>
